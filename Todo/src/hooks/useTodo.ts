@@ -9,7 +9,7 @@ const useTodo = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
 
   const addTodo = (text: string) => {
-    if (!text.trim()) return; 
+    if (!text.trim()) return;
     const newTodo: Todo = {
       id: crypto.randomUUID(),
       text,
